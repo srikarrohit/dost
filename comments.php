@@ -8,7 +8,7 @@ echo'<br><hr><br>
 	<div class=detailBox2>
     <div>
     <div class="titleBox">
-      <label class="fontpara">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspComments</label>
+      <label class="fontpara" id="comm">Comments</label>
     </div>
 
   <div class="actionBox">
