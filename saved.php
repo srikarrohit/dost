@@ -48,7 +48,8 @@ session_start();
 		<ul class="nav nav-tabs col-md-4 col-xs-4">
 		<?php	
 			$view = 1;
-			$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error());
+#			$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error());
+			include 'config.php'; 
 			$strSQL = "SELECT * FROM blog_posts ORDER BY post_id DESC";
 			$query = mysqli_query($con,$strSQL); 
 			

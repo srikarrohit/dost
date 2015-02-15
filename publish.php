@@ -1,7 +1,8 @@
 <?php
 	$postid = $_POST['pid'];
 	
-	$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error()); //Connect to server
+#	$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error()); //Connect to server
+	include 'config.php'; 
 	$strSQL = "UPDATE blog_posts SET publish='True' WHERE post_id='$postid'";
 	mysqli_query($con,$strSQL);
 	$sql1 = "SELECT * FROM blog_posts ORDER BY post_id DESC LIMIT 0, 1";

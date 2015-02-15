@@ -7,7 +7,8 @@
 	      header("location: index.php"); 
 	   }
 	if($_SERVER["REQUEST_METHOD"] == "POST") {	
-		$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error());
+#		$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error());
+		include 'config.php'; 
 		//insert posts into database
 		if($_POST['id']) $id = mysqli_real_escape_string($con, $_POST['id']);
 		$title = mysqli_real_escape_string($con, $_POST['blogtitle']);

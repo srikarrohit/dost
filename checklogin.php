@@ -5,8 +5,8 @@
 	$password = $_POST['password'];
 	$error = "no";
 
-	$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error()); //Connect to server
-	
+#	$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error()); //Connect to server
+	include 'config.php'; 
 	$strSQL = "SELECT * FROM Users WHERE username = '$username'";
 	$query = mysqli_query($con,$strSQL); 
 	$exists = mysqli_num_rows($query); 

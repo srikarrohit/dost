@@ -51,7 +51,8 @@ session_start();
 
 			
 
-			$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error());
+#			$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error());
+			include 'config.php'; 
 
 			$strSQL = "SELECT * FROM blog_posts ORDER BY post_id DESC";
 			$query = mysqli_query($con,$strSQL); 
