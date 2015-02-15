@@ -119,6 +119,7 @@ text-align:center;
 background-color:#F2F9FF;
 }
 
+
 /*COMMENTS*/
 .detailBox {
     
@@ -265,3 +266,8 @@ color:#003300;
 #comm {
  margin-left:50px;
 }
+.custom {
+	height: 30px;
+    width: 60px !important;
+}
+
