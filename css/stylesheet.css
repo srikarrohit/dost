@@ -1,14 +1,15 @@
 body {
   margin-top: 70px;
 background-image:url('images/paint.jpg');
+
 font-size:17px;
 background-size:cover;
 }
 .nav-tabs{
-background-color: rgba(255,255,255,0.9);
+background-color: rgba(255,255,255,0.95);
 padding:0px;
 }
-.tab-pane{background-color: rgba(255,255,255,0.9);
+.tab-pane{background-color: rgba(255,255,255,0.95);
 padding-left:15px;
 height:100%;
 }
@@ -29,10 +30,10 @@ height:100%;
 	margin: 0 5px ;
 }
 
-footer {
+#footer {
 	position:absolute;
 	bottom:0px;
-	top:100%;
+	top:90%;
 	
 }
 .tab-content{
@@ -129,14 +130,16 @@ background-color:#F2F9FF;
     
     border:1px dotted #bbb;
     margin:4px;
+    
  
 }
 
 .titleBox {
-    background-color:#fdfdfd;
+    //background-color:#fdfdfd;
     padding:10px;
     margin: 0 0 0 -40px;
     font-size:17px;
+    
 }
 .titleBox label{
   color:#444;
@@ -210,7 +213,7 @@ margin-top:9px;
 }
 
 #commentsidebar {
-background-color: rgba(255,255,255,0.9);
+background-color: rgba(255,255,255,0.95);
 }
 
 .gentext {
@@ -228,7 +231,7 @@ color:#008000;
 }
 
 .check{
-background-color: rgba(255,255,255,0.9)
+background-color: rgba(255,255,255,0.95)
 }
 
 .small{
@@ -245,4 +248,16 @@ color:#003300;
 
 #tabright{
 //margin-left:30px;
+}
+
+.dashboard-panel-6 {
+   width: 11%;
+}
+
+#profile {
+ width:45%
+}
+
+#headprofile {
+ margin-right:3px;
 }

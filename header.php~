@@ -18,7 +18,7 @@ if(!$user && !$user_stud){
 		    
 		<ul class="nav navbar-nav navbar-right">
 		        <li><a href="login.php">Sign In</a></li>
-						
+			<li><a href="profile.php"><small>Dean\'s profile</small></a></li>			
 		</ul>   
 		
 		</nav> 
