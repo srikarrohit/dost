@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <head>
 		
 	    <meta charset="utf-8">
@@ -48,11 +48,11 @@ session_start();
 		<ul class="nav nav-tabs col-md-4 col-xs-4">
 		<?php	
 			$view = 1;
-<<<<<<< HEAD
-			$con = mysqli_connect("localhost", "root","yousuckballs","DeanBlog") or die(mysql_error());
-=======
+
+			
+
 			$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error());
->>>>>>> 761b2e91156cf399b1b68a4f80a9e2ac4f1a0215
+
 			$strSQL = "SELECT * FROM blog_posts ORDER BY post_id DESC";
 			$query = mysqli_query($con,$strSQL); 
 			

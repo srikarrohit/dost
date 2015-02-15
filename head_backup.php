@@ -15,11 +15,13 @@ if(!$user && !$user_stud){
 		</div>
 		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 
-		    
+		    <ul class="nav navbar-nav">
+		        <li ><a href="index.php">Home</a></li>
+		    </ul>
 		<ul class="nav navbar-nav navbar-right">
-		        <li><a href="login.php">Sign In</a></li>
-			<li><a href="profile.php">Dean\'s profile</a></li>			
-		</ul>   
+		        <li ><a href="login.php">Sign In</a></li>
+			
+		    </ul>   
 		
 		</nav> 
 	    </div>
@@ -37,16 +39,15 @@ else if($user) {
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		    </button>
-		    <a href="homeUser.php" class="navbar-brand">The Dean\'s Blog<span class="glyphicon glyphicon-pencil pencil"></span></a>
+		    <a href="profile.php" class="navbar-brand">The Dean\'s Blog<span class="glyphicon glyphicon-pencil pencil"></span></a>
 		</div>
 		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 		    
 		    <ul class="nav navbar-nav">
-		        
+		        <li ><a href="homeUser.php">Home</a></li>
 			<li><a href="newpost.php">New Post</a></li>
 			<li><a href="saved.php">Saved Posts</a></li>
 		    </ul>
-		
 		   <div class="nav navbar-nav navbar-right">
 <div class="dropdown top">
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
@@ -56,14 +57,9 @@ else if($user) {
    <li><a href="changepwd.php" class="">Change Password</a></li>
    <li><a href="logout.php" class="">Sign Out</a></li>
   </ul>
-  
 </div>
-    
-		
 </div>	
-<ul class="nav navbar-nav navbar-right">
-	<li><a href="profile.php"><small>Dean\'s profile&nbsp&nbsp</small></a></li>			
-  </ul>	
+		    
 		</nav>
 	    </div>
 	</header>';
@@ -80,7 +76,7 @@ else {
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		    </button>
-		    <a href="homeUser.php" class="navbar-brand">The Dean\'s Blog<span class="glyphicon glyphicon-pencil pencil"></span></a>
+		    <a href="profile.php" class="navbar-brand">The Dean\'s Blog<span class="glyphicon glyphicon-pencil pencil"></span></a>
 		</div>
 		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 		    
@@ -102,9 +98,6 @@ else {
 </div>	
 		    
 		    </ul>
-<ul class="nav navbar-nav navbar-right">
-	<li><a href="profile.php"><small>Dean\'s profile&nbsp&nbsp</small></a></li>			
-  </ul>
 		</nav>
 	    </div>
 	</header>';

@@ -2,7 +2,7 @@
 	echo '<br><br><div id="commentsidebar">
 	
     <div class="titleBox">
-      <label class="fontpara">Recent Comments</label>
+      <label class="fontpara">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRecent Comments</label>
     </div>
 <div class="actionBox">
 	 <ul class="commentList">';

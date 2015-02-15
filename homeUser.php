@@ -49,7 +49,7 @@
 	       <div class="tabbable tabs-left col-md-4">
 		<ul class="nav nav-tabs col-md-12 col-xs-12">
 		<?php
-			$con = mysqli_connect("localhost", "root","yousuckballs","DeanBlog") or die(mysql_error());
+			$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error());
 			$strSQL = "SELECT * FROM blog_posts ORDER BY post_id DESC";
 			
 			$query = mysqli_query($con,$strSQL); 
