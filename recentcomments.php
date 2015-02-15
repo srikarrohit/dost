@@ -17,10 +17,20 @@
 		$sql2 = "SELECT * FROM blog_posts where post_id = '$id_comm'";
 		$query_blog = mysqli_query($con,$sql2);
 		$post_corr = mysqli_fetch_array($query_blog);
+		if ($row['author'] != 'Dean') {
 		echo'<li>
                 <div class="commenterImage">
                   <img src="./css/images/blank.png" />
-                </div>
+                </div>';
+		}
+		if ($row['author'] == 'Dean') {
+		echo'<li>
+                <div class="commenterImage">
+                  <img src="./css/images/minion.png" />
+                </div>';
+		}
+	
+		echo '
                 <div class="commentText">';
 		$sectionid = $i;
 		echo '<span class="gentext"><b>'.$row['author'].'</b><em> commented on </em><span id="comsidetitle"><a href="#'.$row['postid'].'" data-toggle="tab">'.$post_corr['post_title'].'</a></span><br><br>'.$row['comments'].'</span><br><span class="date sub-text">on '.$row['date'].'</span><br><hr>';

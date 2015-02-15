@@ -84,11 +84,7 @@ else {
 		</div>
 		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 		    
-		    <ul class="nav navbar-nav">
-		        <li ><a href="homeUser.php">Home</a></li>
-		        
-			
-		    </ul>
+		   
 			   <div class="nav navbar-nav navbar-right">
 <div class="dropdown top">
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">

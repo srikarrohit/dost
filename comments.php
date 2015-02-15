@@ -20,10 +20,20 @@ $querycom = mysqli_query($con,$strSQLcom);
 $flag = mysqli_num_rows($querycom);
 #FETCH ALL COMMENTS FOR PARTICULAR POST
 while($comment = mysqli_fetch_array($querycom)) {
+		if ($comment['author'] != 'Dean') {
 		echo'<li>
                 <div class="commenterImage">
                   <img src="./css/images/blank.png" />
-                </div>
+                </div>';
+		}
+		if ($comment['author'] == 'Dean') {
+		echo'<li>
+                <div class="commenterImage">
+                  <img src="./css/images/minion.png" />
+                </div>';
+		}
+	
+		echo '
                 <div class="commentText">
 		    <h5 class="header">'.$comment['author'].'</h5>';
                    echo ' <p>'.$comment['comments'].'</p> <span class="date sub-text">on '.date('d-F-Y',strtotime($comment['date'])).'</span>
