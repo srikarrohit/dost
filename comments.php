@@ -35,9 +35,27 @@ while($comment = mysqli_fetch_array($querycom)) {
 	
 		echo '
                 <div class="commentText">
-		    <h5 class="header">'.$comment['author'].'</h5>';
-                   echo ' <p>'.$comment['comments'].'</p> <span class="date sub-text">on '.date('d-F-Y',strtotime($comment['date'])).'</span>
+		    <h5 class="header">'.$comment['author'];
+		 
+		echo '</h5>';
+			
+                   echo ' <p>'.$comment['comments'].'</p> ';
+
+
+		
+	if ($comment['author'] == $fullname.' '.$user_stud || $comment['author'] == $fullname) {
+			 echo '<form id="delete" method="POST" action="deletecomment.php">
+			<span class="date sub-text">on '.date('d-F-Y',strtotime($comment['date'])).'
+						 <input type="hidden" name="id" value="'.$comment['id'].'">
+						<input type="hidden" name="sectionid" value="'.$j.'">
+		<input type="hidden" name="view" value="'.$view.'">
+						  <button type="submit" class="btn btn-default custom delete"><small><center>Delete</center></small></button>  
+						 </form>';
+		}
+		
+echo '</span>
                 </div>
+		
                 </li>';	
 }
 #NO COMMENTS ARE THR FOR THAT POST
