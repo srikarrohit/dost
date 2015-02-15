@@ -12,7 +12,7 @@
     <link href="css/stylesheet.css" rel="stylesheet">
     <script src="ckeditor/ckeditor.js"></script>
     <link href="uploadfile.css" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="jquery.uploadfile.min.js"></script>
 <style>
 body {
