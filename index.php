@@ -24,7 +24,26 @@
     <![endif]-->
      
 </head>
-
+<?php
+	#AUTHENTICATE
+	session_start(); 
+	if($_SESSION['user']){
+		$user = $_SESSION['user']; 
+		$id = $_SESSION['id'];
+		$fullname = "Dean";
+		header("location: homeUser.php");
+	}
+	else if($_SESSION['user_stud']){
+		$user_stud = $_SESSION['user_stud']; 
+		$id_stud = $_SESSION['id_stud'];
+		$fullname = $_SESSION['fullname'];
+		header("location: homeUser.php");
+	}
+	else {
+		
+	}
+	
+?>
 <body>
 	<div class='background'>
 	<?php include 'header.php'; ?>
