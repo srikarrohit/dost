@@ -52,6 +52,10 @@ while($comment = mysqli_fetch_array($querycom)) {
 						  <button type="submit" class="btn btn-default custom delete"><small><center>Delete</center></small></button>  
 						 </form>';
 		}
+else {
+	echo '
+			<span class="date sub-text">on '.date('d-F-Y',strtotime($comment['date'])).' ';
+	}
 		
 echo '</span>
                 </div>
