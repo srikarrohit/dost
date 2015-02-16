@@ -43,7 +43,7 @@ body {
 ?>
 <body>
 
-	<?php include 'header_signin.php'; ?>
+	<?php include 'header.php'; ?>
 	<?php
 		if($id != NULL) {
 			$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error()); //Connect to server

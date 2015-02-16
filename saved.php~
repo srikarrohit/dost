@@ -116,7 +116,7 @@ session_start();
 					     #Header for posts
 					     echo '<div class="tab-pane" id="'.$row['post_id'].'"><h1>'.$row['post_title'].'</h1><span id="lightcolor" class="glyphicon glyphicon-time">&nbsp'.date('d-F-Y',strtotime($row['post_date'])).'</span>';
 					     #User is Dean
-						 echo '<br><div class="row"><div class="col-md-1"><form id="delete" method="POST" action="deletepost.php">
+						 echo '<br><div class="row"><div class="col-md-1 dashboard-panel-6"><form id="delete" method="POST" action="deletepost.php">
 						 <input type="hidden" name="id" value="'.$row['post_id'].'">
 						 <button type="submit" class="btn btn-default delete">Delete</button> 
 						 </form></div>';

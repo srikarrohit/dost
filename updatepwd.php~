@@ -6,7 +6,7 @@ $newpw1 = $_POST['new_password1'];
 $newpw2 = $_POST['new_password2'];
 
 if($newpw1==$newpw2){
-$con = mysqli_connect("localhost", "root","yousuckballs","DeanBlog") or die(mysql_error()); //Connect to server
+$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error()); //Connect to server
 
         $strSQL = "SELECT * FROM Users WHERE username = 'Dean'";
         $query = mysqli_query($con,$strSQL);

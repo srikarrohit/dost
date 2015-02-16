@@ -29,7 +29,7 @@ while($comment = mysqli_fetch_array($querycom)) {
 		if ($comment['author'] == 'Dean') {
 		echo'<li>
                 <div class="commenterImage">
-                  <img src="./css/images/minion.png" />
+                  <img src="uploads/dean.jpg" />
                 </div>';
 		}
 	

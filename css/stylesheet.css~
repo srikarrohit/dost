@@ -119,6 +119,7 @@ text-align:center;
 background-color:#F2F9FF;
 }
 
+
 /*COMMENTS*/
 .detailBox {
     
@@ -259,5 +260,26 @@ color:#003300;
 }
 
 #headprofile {
- margin-right:3px;
+ margin-right:30px;
+}
+
+#comm {
+ margin-left:50px;
+}
+.custom {
+	height: 30px;
+    width: 60px !important;
+}
+
+.browse{
+	 margin-left: 40px;
+
+    
+}
+
+.custom2 {
+	height: 25px;
+    width: 60px !important;
+	line-height:10px;
+	text-align:center;
 }

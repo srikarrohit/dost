@@ -1,7 +1,7 @@
 <?php
 	
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
-		$con1 = mysqli_connect("localhost", "root","yousuckballs","DeanBlog") or die(mysql_error());
+		$con1 = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error());
 		//inserts comments into db
 		$pid = mysqli_real_escape_string($con1, $_POST['pid']);
 		$commentauthor = mysqli_real_escape_string($con1, $_POST['author']);

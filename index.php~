@@ -10,7 +10,7 @@
  
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -24,6 +24,26 @@
     <![endif]-->
      
 </head>
+<?php
+	#AUTHENTICATE
+	session_start(); 
+	if($_SESSION['user']){
+		$user = $_SESSION['user']; 
+		$id = $_SESSION['id'];
+		$fullname = "Dean";
+		header("location: homeUser.php"); 
+	}
+	else if($_SESSION['user_stud']){
+		$user_stud = $_SESSION['user_stud']; 
+		$id_stud = $_SESSION['id_stud'];
+		$fullname = $_SESSION['fullname'];
+		header("location: homeUser.php"); 
+	}
+	else {
+		
+	}
+	
+?>
 <body>
 	<div class='background'>
 	<?php include 'header.php'; ?>
@@ -39,5 +59,6 @@
   </div>
 
 
+<?php include 'footer.php'; ?>
 </body>
 </html>

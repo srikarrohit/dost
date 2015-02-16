@@ -26,7 +26,7 @@
 		if ($row['author'] == 'Dean') {
 		echo'<li>
                 <div class="commenterImage">
-                  <img src="./css/images/minion.png" />
+                  <img src="uploads/dean.jpg" />
                 </div>';
 		}
 	

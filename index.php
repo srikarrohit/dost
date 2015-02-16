@@ -24,6 +24,7 @@
     <![endif]-->
      
 </head>
+
 <body>
 	<div class='background'>
 	<?php include 'header.php'; ?>

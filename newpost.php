@@ -46,8 +46,7 @@ body {
 	<?php include 'header.php'; ?>
 	<?php
 		if($id != NULL) {
-#			$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error()); //Connect to server
-			include 'config.php'; 
+			$con = mysqli_connect("localhost", "root","testmysql123","DeanBlog") or die(mysql_error()); //Connect to server
 			$strSQL = "SELECT* FROM blog_posts WHERE post_id='$id'";
 			$q = mysqli_query($con,$strSQL);
 			$row = mysqli_fetch_array($q);
